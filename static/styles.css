@@ -1,0 +1,32 @@
+.topnav {
+    background-color: #ea1b23;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.bottomnav {
+    background-color:#ea1b23;
+}
+.navbar-text {
+    color:whitesmoke;  
+}
+.navbar-brand {
+    color:whitesmoke;
+}
+
+.nav-link {
+    color:whitesmoke
+}
+
+.backgroundmiddle {
+    background-color: #e2e097
+}
+
+.backgroundsides {
+    background-image: url("background.jpg");
+    background-color: #e2e097;
+}
+.carousel-background {
+    text-shadow: black 2px 2px;
+}
+body {
+    overflow-x:hidden;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="stylesheet" href="static/photoswipe.css">
+  <link rel="stylesheet" href="static/default-skin.css">
+  <link rel="stylesheet" href="static/gallerystyles.css">
+  <script src="static/photoswipe.js"></script>
+  <script src="static/photoswipe-ui-default.js"></script>
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/jQuery.js"></script>
+  <title>Baby Salsa - Gallery</title>
+</head>
+
+<body>
+  <div>
+    <div class="row">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm topnav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="static/logo.png" alt="Brand Logo" style="width:60px;" class="rounded-pill">
+            </a>
+            <h3 class="navbar-text">Baby Salsa Authentic Mexican Restaurant</h3>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2 backgroundsides"></div>
+    <div class="col-8 backgroundmiddle">
+
+      <div class="gallerystyle">
+        <div class="container">
+          <div class="row">
+
+            <div class="">
+
+              <h1 class="text-center">
+                Baby Salsa Authentic Mexican Restaurant<br>
+                <small><em>Photo Gallery</em></small>
+              </h1>
+
+              <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                <!-- Use figure for a more semantic html -->
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+                  <a href="static/photoswipe/carneasadachipotle.jpg"
+                    data-caption="Carne Asada with Chipotle and Charro Beans<br><em class='text-muted'>© Foursquare</em>"
+                    data-width="1200" data-height="900" itemprop="contentUrl">
+                    <!-- Thumbnail -->
+                    <img src="static/photoswipe/carneasadachipotlethumb.jpg" itemprop="thumbnail" alt="Carne Asada">
+                  </a>
+                </figure>
+
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="static/photoswipe/ChipsAndSalsa.jpg"
+                    data-caption="Tortilla Chips and Red Salsa<br><em class='text-muted'>© abillion</em>"
+                    data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img src="static/photoswipe/ChipsAndSalsathumb.jpg" itemprop="thumbnail" alt="Chips and Salsa">
+                  </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="static/photoswipe/Flautas.jpg"
+                    data-caption="Shredded Pork Flautas<br><em class='text-muted'>© TripAdvisor</em>" data-width="1200"
+                    data-height="900" itemprop="contentUrl">
+                    <img src="static/photoswipe/Flautasthumb.jpg" itemprop="thumbnail" alt="Pork Flautas">
+                  </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="static/photoswipe/Patio.jpg"
+                    data-caption="Patio<br><em class='text-muted'>© victoriapatios</em>" data-width="1200"
+                    data-height="900" itemprop="contentUrl">
+                    <img src="static/photoswipe/Patiothumb.jpg" itemprop="thumbnail" alt="patio">
+                  </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="static/photoswipe/tacos.jpg"
+                    data-caption="Tacos<br><em class='text-muted'>© TripAdvisor</em>" data-width="1200"
+                    data-height="900" itemprop="contentUrl">
+                    <img src="static/photoswipe/tacosthumb.jpg" itemprop="thumbnail" alt="Tacos">
+                  </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="static/photoswipe/VeganTacoSaladChorizo.jpg"
+                    data-caption="=Taco Salad with Vegan Chorizo<br><em class='text-muted'>© abillion</em>"
+                    data-width="1200" data-height="900" itemprop="contentUrl">
+                    <img src="static/photoswipe/VeganTacoSaladChorizothumb.jpg" itemprop="thumbnail"
+                      alt="chorizo taco salad">
+                  </a>
+                </figure>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Some spacing 😉 -->
+        <div class="spacer"></div>
+
+
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+          <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+          <div class="pswp__bg"></div>
+          <!-- Slides wrapper with overflow:hidden. -->
+          <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+              <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                  <div class="pswp__preloader__icn">
+                    <div class="pswp__preloader__cut">
+                      <div class="pswp__preloader__donut"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+              </div>
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+              <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          'use strict';
+
+          /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+          (function ($) {
+
+            // Init empty gallery array
+            var container = [];
+
+            // Loop over gallery items and push it to the array
+            $('#gallery').find('figure').each(function () {
+              var $link = $(this).find('a'),
+                item = {
+                  src: $link.attr('href'),
+                  w: $link.data('width'),
+                  h: $link.data('height'),
+                  title: $link.data('caption')
+                };
+              container.push(item);
+            });
+
+            // Define click event on gallery item
+            $('#gallery a').click(function (event) {
+
+              // Prevent location change
+              event.preventDefault();
+
+              // Define object and gallery options
+              var $pswp = $('.pswp')[0],
+                options = {
+                  index: $(this).parent('figure').index(),
+                  bgOpacity: 0.85,
+                  showHideOpacity: true
+                };
+
+              // Initialize PhotoSwipe
+              var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+              gallery.init();
+            });
+
+          }(jQuery));
+        </script>
+      </div>
+    </div>
+
+    <div class="col-2 backgroundsides"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg bottomnav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Baby Salsa</a>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sitemap.xml">Sitemap</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <small>&copy; Jameson Stickle 2021 ITAS191 - No Copyright Infringement Intended</small>
+        </span>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>
