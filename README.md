@@ -37,12 +37,4 @@ I used a colour picker on Baby Salsa's Logo to come up with the colour scheme fo
 ### Other Features I'd Add
 - I would have loved to have added some more JavaScript elements to my website, I wanted to add a screen to order delivery directly from the site, but couldn't find anything from SkipTheDishes.
 
-### Feedback for Brandon
-
-> I can't say that I have any suggestions for changes 
-> to the course, but I will say that I enjoyed it.
-> I believe that I respond well to your style of
-> teaching and look forward to learning more in
-> the second semester and going forward in Year 2.
-
 &copy; Jameson Stickle 2021 - VIU ITAS-WMD ITAS191 Final Project
